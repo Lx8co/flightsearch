@@ -1,0 +1,36 @@
+<!-- Show message in the case of error -->
+<div class="alert alert-danger" ng-show="error">
+  Please make sure you fill <strong>all fields</strong>.
+</div>
+
+<div class="container-fluid search-bar">
+
+    <div class="col-xs-12 col-md-6">
+      From:
+      <airport-selector
+        airport="origin">
+      </airport-selector>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+      To:
+      <airport-selector
+        airport="destination">
+      </airport-selector>
+    </div>
+    
+    <div class="col-xs-12 col-md-12">Between:</div>
+
+    <div class="col-xs-12 col-md-12 date-container">
+   
+      <date-wrapper
+        start-date="startDate"
+        end-date="endDate">
+      </date-wrapper>
+    </div>
+
+    <div class="col-xs-12 col-md-12 button-container">
+      <button ng-click="$ctrl.find()" class="btn btn-default">Find a flight!</button>
+    </div>
+
+  </div>

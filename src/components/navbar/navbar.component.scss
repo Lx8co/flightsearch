@@ -1,0 +1,14 @@
+@import '../scss/main.scss';
+
+nav.navbar {
+    background-color: $ryan-blue;
+    border-bottom: 3px solid $ryan-yellow;
+}
+
+.navbar a {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}

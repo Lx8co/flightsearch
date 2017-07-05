@@ -1,0 +1,13 @@
+<ui-select ng-model="$ctrl.airport.selected"
+            theme="bootstrap"
+            ng-disabled="$ctrl.disabled"
+            reset-search-input="false"
+            style=""
+            title="Choose an airport">
+    <ui-select-match placeholder="Select airport...">{{$select.selected.name}}</ui-select-match>
+    <ui-select-choices repeat="airport in ($ctrl.airports | filter:$select.search) track by $index"
+                refresh="$ctrl.getAirports($select.search)"
+                refresh-delay="0">
+        <div ng-bind-html="airport.name | highlight: $select.search"></div>
+    </ui-select-choices>
+</ui-select>

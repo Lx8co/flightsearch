@@ -1,0 +1,13 @@
+<div class="container-fluid results">
+    <div class="text-center" ng-show="$ctrl.noResults">
+        <h3>No results were found.</h3>
+    </div>
+
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="flight in $ctrl.flights track by $index">            
+            <strong>{{ flight.origin }}</strong> -
+            <strong>{{ flight.destination }}</strong>
+            <span class="badge">{{ flight.price }}</span>
+        </li>
+    </ul>
+</div>

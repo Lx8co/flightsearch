@@ -1,0 +1,14 @@
+@import '../scss/main.scss';
+
+.results {
+    padding: 20px;
+}
+
+.results ul li {
+    background-color: $ryan-yellow;
+    color: white;
+}
+
+.results ul li .badge {
+    background-color: $ryan-blue;
+}

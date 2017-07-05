@@ -1,0 +1,29 @@
+@import '../../scss/main.scss';
+
+.search-bar {
+    background-color: $ryan-yellow;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid $ryan-blue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.search-bar button {
+    width: 100%;
+    color: white;
+    background-color: $ryan-blue;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search-bar .date-container {
+     padding-left: 0; 
+     padding-right:0;
+}
+
+.button-container {
+    padding-top: 20px;
+}
