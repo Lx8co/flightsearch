@@ -4,8 +4,11 @@
     </div>
 
     <ul class="list-group">
-        <li class="list-group-item" ng-repeat="flight in $ctrl.flights track by $index">            
-            <strong>{{ flight.origin }}</strong> 
+        <li class="list-group-item" ng-repeat="flight in $ctrl.flights track by $index">
+            <strong>{{ flight.origin }}</strong>
+            <div class="plane">
+                <hr class="plane-gliph" data-content="Flight">
+            </div>
             <strong>{{ flight.destination }}</strong>
             <span class="badge">{{ flight.price }}</span>
         </li>

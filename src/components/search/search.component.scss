@@ -1,12 +1,12 @@
 @import '../../scss/main.scss';
 
 .search-bar {
-    background-color: $ryan-yellow;
+    background-color: $ryan-bright-blue;
     color: white;
     font-weight: bold;
     font-size: 18px;
     border-radius: 5px;
-    border: 1px solid $ryan-blue;
+    border: 1px solid $ryan-yellow;  
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -14,7 +14,7 @@
 .search-bar button {
     width: 100%;
     color: white;
-    background-color: $ryan-blue;
+    background-color: $ryan-yellow;
     font-size: 18px;
     font-weight: bold;
 }
