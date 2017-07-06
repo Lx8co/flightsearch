@@ -6,11 +6,11 @@ export default function SearchController($scope, $state) {
   this.find = () => {
     $scope.error = false;
 
-    // if (typeof $scope.origin === 'undefined' || typeof $scope.destination === 'undefined'
-    //   || typeof $scope.startDate === 'undefined' || typeof $scope.endDate === 'undefined') {
-    //   $scope.error = true;
-    //   return;
-    // }
+    if (typeof $scope.origin === 'undefined' || typeof $scope.destination === 'undefined'
+      || typeof $scope.startDate === 'undefined' || typeof $scope.endDate === 'undefined') {
+      $scope.error = true;
+      return;
+    }
 
     const origin = $scope.origin.selected.iataCode;
     const destination = $scope.destination.selected.iataCode;
