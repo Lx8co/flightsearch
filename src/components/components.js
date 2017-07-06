@@ -1,3 +1,5 @@
+// Component Barrel
+
 import angular from 'angular';
 import { DateWrapperComponent } from './date-wrapper/date-wrapper.component';
 import { DateSelectorComponent } from './date-selector/date-selector.component';

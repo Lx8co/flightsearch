@@ -1,3 +1,5 @@
+// for debuging proporse
+// import enableProdMode from '@angular/core';
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import uiSelect from 'ui-select';

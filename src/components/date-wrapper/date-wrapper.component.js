@@ -3,8 +3,8 @@ import controller from './date-wrapper.controller';
 
 export const DateWrapperComponent = {
   bindings: {
-    startDate: '<',
-    endDate: '<'
+    startDate: '=',
+    endDate: '='
   },
   template,
   controller

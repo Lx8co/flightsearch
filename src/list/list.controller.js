@@ -7,18 +7,18 @@ export default function ListController($stateParams, CheapFlightService) {
   this.noResults = false;
 
   const searchCriteria = {
-    start: $stateParams.start,
-    end: $stateParams.end,
     origin: $stateParams.origin,
-    destination: $stateParams.destination
+    destination: $stateParams.destination,
+    start: $stateParams.start,
+    end: $stateParams.end
   };
 
   this.$onInit = () => {
     CheapFlightService.find(searchCriteria).then((flights) => {
-      if (flights.length === 0) {
-        this.noResults = true;
-        return;
-      }
+        if (flights.length === 0) {
+          this.noResults = true;
+          return;
+        }
 
       this.flights = flights.map(flight => ({
         origin: moment(flight.dateFrom).format('MM/DD/YYYY HH:MM'),
