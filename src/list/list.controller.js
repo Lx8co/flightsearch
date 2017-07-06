@@ -21,8 +21,10 @@ export default function ListController($stateParams, CheapFlightService) {
         }
 
       this.flights = flights.map(flight => ({
-        origin: moment(flight.dateFrom).format('MM/DD/YYYY HH:MM'),
-        destination: moment(flight.dateTo).format('MM/DD/YYYY HH:MM'),
+        origin: searchCriteria.origin,
+        destination: searchCriteria.destination,
+        start: moment(flight.dateFrom).format('MM/DD/YYYY HH:MM'),
+        end: moment(flight.dateTo).format('MM/DD/YYYY HH:MM'),
         price: flight.price.toFixed(2) + flight.currency
       }));
     });

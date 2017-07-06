@@ -23,7 +23,7 @@
     "npm",
     "angular"
   ],
-  "author": "Fabrizio Fortunato",
+  "author": "Alexei Ferreira",
   "license": "MIT",
   "babel": {
     "presets": [

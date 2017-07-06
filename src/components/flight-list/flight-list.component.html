@@ -5,12 +5,28 @@
 
     <ul class="list-group">
         <li class="list-group-item" ng-repeat="flight in $ctrl.flights track by $index">
-            <strong>{{ flight.origin }}</strong>
+
+            <div class="origin">
+                <strong>{{ flight.origin }}</strong>
+            </div>
+            <p></p>
+            <div>{{ flight.start }}</div>
+
             <div class="plane">
                 <hr class="plane-gliph" data-content="Flight">
             </div>
-            <strong>{{ flight.destination }}</strong>
+
+            <div class="origin">
+                <strong>{{ flight.destination }}</strong>
+            </div>
+            <p></p>
+            <div>{{ flight.end }}</div>
             <span class="badge">{{ flight.price }}</span>
+            <div>
+                <p>
+                </p>
+            </div>
         </li>
     </ul>
+
 </div>

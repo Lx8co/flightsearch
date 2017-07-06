@@ -6,8 +6,9 @@ export default function SearchController($scope, $state) {
   this.find = () => {
     $scope.error = false;
 
-    if (typeof $scope.origin === 'undefined' || typeof $scope.destination === 'undefined'
-      || typeof $scope.startDate === 'undefined' || typeof $scope.endDate === 'undefined') {
+    
+    if ( !($scope.origin  ||  $scope.destination 
+      || $scope.startDate  || $scope.endDate) ) {
       $scope.error = true;
       return;
     }
@@ -15,6 +16,7 @@ export default function SearchController($scope, $state) {
     const origin = $scope.origin.selected.iataCode;
     const destination = $scope.destination.selected.iataCode;
     const start = moment($scope.startDate).format('YYYY-MM-DD');
+    // console.log(start);
     const end = moment($scope.endDate).format('YYYY-MM-DD');
 
     $state.go('list', { origin, destination, start, end });
